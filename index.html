@@ -1,186 +1,548 @@
-<!doctype html>
-
-<html>
-
+<!doctype html> 
   <head>
-    <title>Themestrap Bootstrap 3 Theme Gallery</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+    <title>Jared Evers Music</title>
+    <meta name="viewport" content="user-scalable=yes">
+      <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+    <link rel="stylesheet" href="../dist/css/bootstrap.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
-    <style>
-      .themes > li {
-        display: inline-block;
-        margin-right: 10px;
-        margin-bottom: 20px;
-        width: 340px;
-        padding: 10px;
-        height: 280px;
-        vertical-align: top;
-      }
-      .themes .frame {
-        width: 320px;
-        height: 220px;
-        overflow: hidden;
-        margin-bottom: 10px;
-      }
-      .themes iframe {
-        pointer-events: none;
-        width: 1024px;
-        height: 800px;
-        border: 0;
-        -webkit-transform-origin: top left;
-        -webkit-transform: scale(0.31);
-        -ms-transform-origin: top left;
-        -ms-transform: scale(0.31);
-        transform-origin: top left;
-        transform: scale(0.31);
-        overflow: hidden;
-        background: gray;
-      }
-      .themes > li h4 {
-        margin-top: 5px;
-      }
-      .your-theme-here {
-        width: 320px;
-        height: 220px;
-        background: #9c6;
-        margin-bottom: 10px;
-        border-radius: 3px;
-        display: block;
-        text-align: center;
-        color: #bd8;
-        font-size: 8em;
-        font-weight: bold;
-        line-height: 220px;
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
-      }
-      .your-theme-here:hover {
-        background: #bd8;
-        color: #9c6;
-        text-decoration: none;
-      }
-    </style>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/dist/sly.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.css" />
+
+
+
+  </head>
+<body>
+
+    <div id="global-wrapper" class="transparent">
+
+    <div id="navbar" class="navbar navbar-inverse" style="width:100%; top:0px;  left:0px; margin-bottom:0; padding-bottom:0;"
+        data-anchor-target="#panel-title"
+        data-0p="top:90%;position:fixed;"
+        data-10p="top:90%;position:fixed;"
+        data-100p="top:0%;position:fixed;"
+        >
+        <div class="container" style="margin-bottom:0; padding-bottom:0;">
+            <div id="nav-box" data-anchor-target="#panel-title" class="hidden-xs"
+                data-0="left:-3px;width:52px;"
+                data-100p="left:50px;width:160px;"
+                data-180p="left:50px;width:160px;"
+                data-200p="left:209px;width:120px;"
+                data-280p="left:209px;width:120px;"
+                data-300p="left:330px;width:132px;"
+                data-380p="left:330px;width:132px;"
+                data-400p="left:470px;width:157px;"
+                ></div>
+            <div class="navbar-header active">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".header-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand nav-link" href="#" data-menu-top="0p" data-anchor-target="#panel-title"
+                    
+                    >
+                    <img src="/dist/images/pngs/nav-je.png" alt="JE" width="31" height="20"/>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse header-collapse">
+                <ul class="nav navbar-nav">
+                <li id="nav-link-updates"><a class="nav-link" href="#updates" data-menu-top="100p" data-anchor-target="#panel-title"
+                    
+                    ><img src="/dist/images/pngs/nav-updates.png" alt="UPDATES" /></a></li>
+                <li id="nav-link-music"><a class="nav-link" href="#music" data-menu-top="200p" data-anchor-target="#panel-title"
+                    ><img src="/dist/images/pngs/nav-music.png" alt="MUSIC" /></a></li>
+                <li id="nav-link-events"><a class="nav-link" href="#events" data-menu-top="300p" data-anchor-target="#panel-title"
+                    ><img src="/dist/images/pngs/nav-events.png" alt="EVENTS" /></a></li>
+                <li id="nav-link-connect"><a class="nav-link" href="#connect" data-menu-top="400p" data-anchor-target="#panel-title">
+                    <img src="/dist/images/pngs/nav-connect.png" alt="CONNECT" style="height:1.3em;" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="panel-title" class="screen-panel" 
+        data-0="transform:translate(0,0%)" 
+        data-15p="transform:translate(0,0%)" 
+        data-110p="transform:translate(0,-100%)">
+        <div id="title-img-container" class="container" style="position:relative;">
+            <img class="hidden-xs" src="/dist/images/pngs/txt-title.png" style="width:100%; height:auto;" />
+            <img class="visible-xs" src="/dist/images/pngs/txt-title-small.png" style="width:100%; height:auto;" />
+        </div>
+    </div>
+
+
+
+    <div id="updates" class="screen-panel" 
+        data-0="transform:translate(0,103%)" 
+        data-100p="transform:translate(0,3%)"
+        data-115p="transform:translate(0,3%)" 
+        data-218p="transform:translate(0,-100%)">
+        <div class="container">
+            <div class="page-header">
+                <h1><img src="/dist/images/pngs/title-updates.png" alt="UPDATES" class="img-title"/></h1>
+            </div>
+
+<!--            <div class="row">
+                <div class="col-sm-12">
+                    <div class="well" style="height:250px">
+                        <iframe src="http://snapwidget.com/sc/?u=amFyZWRldmVyc3xpbnwyMDB8NXwxfHx5ZXN8MjB8bm9uZXx8eWVz&v=191113" title="Instagram Widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:250px"></iframe>
+                    </div>
+                </div>
+            </div>-->
+
+            <div class="row">
+                <div class="col-xs-2 col-lg-1 text-right" style="min-width:90px">
+                    <a href="http://www.instagram.com/jaredevers" target="_blank"><img src="/dist/images/pngs/updates-insta.png" height="90" width="90" /></a>
+                </div>
+                <div id="instagram-container" class="col-xs-10 col-lg-11 frame">
+                    <ul></ul>
+                </div>
+            </div>
+
+            <div class="scrollbar">
+				<div class="handle">
+					<div class="mousearea"></div>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-xs-2 col-lg-1 text-right"  style="min-width:90px">
+                    <a href="http://jaredevers.tumblr.com" target="_blank"><img src="/dist/images/pngs/updates-tumblr.png" height="80" width="80" style="position:relative; left:12px;" /></a>
+                </div>
+                <div id="blog-container" class="col-xs-10 col-lg-11 frame" >
+                    <ul></ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="music" class="screen-panel" 
+        data-0="transform:translate(0,103%)" 
+        data-100p="transform:translate(0,103%)" 
+        data-200p="transform:translate(0,3%)"
+        data-215p="transform:translate(0,3%)" 
+        data-318p="transform:translate(0,-100%)">
+        <div class="container">
+
+            <div class="page-header">
+                <h1><img src="/dist/images/pngs/title-music.png" alt="MUSIC" class="img-title"/></h1>
+            </div>
+
+            <div class="row hidden-xs">
+                <div class="col-xs-4 text-left">
+                
+                    <iframe id="bandcamp-player" style="margin-top:10px; border: 0; width: 100%; height:200px;" src="http://bandcamp.com/EmbeddedPlayer/album=788044630/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="http://jaredevers.bandcamp.com/album/let-go-forget">Let Go &amp; Forget by Jared Evers</a></iframe>
+                    <br />
+                    <a href="https://itunes.apple.com/us/album/let-go-forget/id669236726?uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.png) no-repeat;width:110px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.svg);}"></a>
+                
+                </div>
+                <div id="music-content-normal" class="hidden-xs col-sm-7 col-sm-offset-1">
+                    <div class="well inner-scroll" style="max-height:100%;">
+                        <h2 style="margin-top:5px;">Let Go and Forget</h2>
+                        <p>
+                            Primarily written in Southern California, you'll notice a lot of references and tonalities that take you to the Golden State. Each 
+                            song is written out of a real experience, and much heartache and love. 
+                        </p>
+                        <p>
+                            A wide variety is heard between songs of hopeful love, like "How to Love" and "Backwards Forwards," to melancholy emotion, like 
+                            "All We Know," and "Let Go and Forget." Simple instrumentation with intricate layering make for an easy yet enticing listen, with 
+                            smooth melodies and lyrics to fit the pieces together. 
+                        </p>
+                        <p>
+                            Because of the way it was written and compiled, this album is best listened 
+                            to in one sitting.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="music-content-sm" class="visible-xs">
+                <div class="well inner-scroll" style="max-height:100%;">
+                    <div style="float:right; text-align:right; margin:0 0 10px 10px">
+                        <iframe style="margin-top:10px; border: 0; width: 150px; height:150px;" src="http://bandcamp.com/EmbeddedPlayer/album=788044630/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="http://jaredevers.bandcamp.com/album/let-go-forget">Let Go &amp; Forget by Jared Evers</a></iframe> <br />
+                        <a href="https://itunes.apple.com/us/album/let-go-forget/id669236726?uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.png) no-repeat;width:110px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.svg);}"></a>
+                    </div>
+                        
+                    <h2 style="margin-top:5px;">Let Go and Forget</h2>
+                    <p>
+                        Primarily written in Southern California, you'll notice a lot of references and tonalities that take you to the Golden State. Each 
+                        song is written out of a real experience, and much heartache and love. 
+                    </p>
+                    <p>
+                        A wide variety is heard between songs of hopeful love, like "How to Love" and "Backwards Forwards," to melancholy emotion, like 
+                        "All We Know," and "Let Go and Forget." Simple instrumentation with intricate layering make for an easy yet enticing listen, with 
+                        smooth melodies and lyrics to fit the pieces together. 
+                    </p>
+                    <p>
+                        Because of the way it was written and compiled, this album is best listened 
+                        to in one sitting.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="events" class="screen-panel" 
+        data-0="transform:translate(0,103%)" 
+        data-200p="transform:translate(0,103%)" 
+        data-300p="transform:translate(0,3%)"
+        data-315p="transform:translate(0,3%)" 
+        data-418p="transform:translate(0,-100%)">
+        <div class="container">
+            <div class="page-header">
+                <h1><img src="/dist/images/pngs/title-events.png" alt="EVENTS" class="img-title"/></h1>
+            </div>
+
+            <div class="row">
+            <div class="tour-dates col-md-6 col-md-offset-3">
+                <a href="http://www.songkick.com/artists/7542354" class="songkick-widget" data-theme="dark" data-font-color="#fff" data-background-color="#444">Tour dates</a>
+                <script src="//widget.songkick.com/widget.js"></script>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    
+    <div id="connect" class="screen-panel" 
+        data-0="transform:translate(0,103%)" 
+        data-300p="transform:translate(0,103%)" 
+        data-400p="transform:translate(0,3%)"
+        data-410p="transform:translate(0,3%)" 
+        data-563p="transform:translate(0,-50%)">
+
+        <div class="container">
+            <div class="page-header">
+                <h1><img src="/dist/images/pngs/title-connect.png" alt="CONNECT" class="img-title"/></h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="well inner-scroll" id="connect-text">
+                                <p>
+                                    Jared is a singer/songwriter from Portland, Oregon, who combines simplistic songwriting with 
+                                    honest lyrics and creative tones. His writing is real and true, and depicts stories from his 
+                                    own life and the lives of those near him. Simple instrumentation with intricate layering make 
+                                    for an easy yet enticing listen, with smooth melodies and lyrics to fit the pieces together.
+                                </p>
+                                <p>
+                                    Jared currently lives with Nashville, Tennessee, with his brother, Joel Evers (drums), and his 
+                                    friend, Joseph Starr (guitar). Joel is an avid photographer when he's not drumming, and you can 
+                                    view his inspiring photographs on <a href="http://instagram.com/joelgonewild" target="_blank">Instagram</a>, <a href="https://twitter.com/joelgonewild" target="_blank"x    >Twitter</a>, and <a href="http://joelevers.vsco.co/" target="_blank">VSCO</a> through the handle @joelgonewild. 
+                                    Joseph uses most of his time to improve his tone, so he doesn't bother with things like tweets 
+                                    and instas. You could probably write him a good-old-fashioned letter if you really wanted to.
+                                </p>
+                                <p>
+                                    As a lover of all people, Jared enjoys speaking to new people and hearing stories from all over. 
+                                    Follow or contact him through his social media links below, or give him a direct email at 
+                                    <a href="mailto:jaredeversmusic@gmail.com">jaredeversmusic@gmail.com</a>.
+                                </p>
+                            </div>
+
+                           
+
+                        </div>
+                        <div class="col-sm-6 hidden-xs">
+                            <div style="margin-top:10px">
+                                <a class="twitter-timeline" href="https://twitter.com/search?q=from%3Athejaredevers+OR+from%3Ajoelgonewild" data-widget-id="399694734962081793">Loading tweets from the band...</a>
+                                <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                            </div>
+                        </div>
+                    </div>
+                     
+                </div>
+            </div>
+            <div class="col-xs-12 text-center social-links">
+                <a href="http://www.twitter.com/thejaredevers" target="_blank"><img src="/dist/images/pngs/social-twitter.png" height="60" width="60" /></a>&nbsp;
+                <a href="http://www.facebook.com/jaredevers" target="_blank"><img src="/dist/images/pngs/social-facebook.png" height="60" width="60" /></a>&nbsp;
+                <a href="http://www.instagram.com/jaredevers" target="_blank"><img src="/dist/images/pngs/social-insta.png" height="60" width="60" /></a>&nbsp;
+                <a href="http://jaredevers.tumblr.com" target="_blank"><img src="/dist/images/pngs/social-tumblr.png" height="60" width="60" /></a>&nbsp;
+            </div>
+            <p class="text-muted text-center" style="margin-top:50px; font-weight:lighter;">&copy;2013 JARED EVERS</p>
+        </div>
+    </div>
+
+    </div>
+
+    <script type="text/javascript" src="/dist/skrollr.min.js"></script>
+    <script type="text/javascript" src="/dist/skrollr.menu.min.js"></script>
+
+    
+    <script type="text/javascript">
+        var _blog;
+        var _instagrams;
+        function instagram(id) {
+            var width = $(window).width();
+            
+            var originalHeight = _instagrams[id].images.standard_resolution.height;
+            var originalWidth = _instagrams[id].images.standard_resolution.width;
+            var imgSrc = _instagrams[id].images.standard_resolution.url;
+
+            var width = Math.min(640, $(window).width() - 50);
+            var height = $(window).height() - 73;
+
+            var videoUrl = null;
+            if (_instagrams[id].videos) {
+                videoUrl = '<video  style="max-width:' + originalWidth + 'px; max-height:100%; " controls autoplay><source src="' + _instagrams[id].videos.standard_resolution.url + '" type="video/mp4"/></video>';
+            }
+            var w = Math.min(650, $(window).width() - 50);
+            $.fancybox.open({
+                type: 'html',
+                autoDimensions: false,
+                autoSize: false,
+                width: w,
+                'height': w + 75,
+                content: '<div style="text-align:center; width:98%;">' + (videoUrl || ('<img src="' + imgSrc + '" style="max-width:' + originalWidth + 'px; max-height:100%; height:' + originalHeight + 'px;" />')) + '</div><div style="margin:5px 0 5px; width:100%;"><p style="text-align:center; padding:0 15%;">' + _instagrams[id].caption.text + '</p></div>'
+            });
+
+        }
+        function blog(id) {
+            $.fancybox.open({
+                type: 'html',
+                autoDimensions: false,
+                autoSize: false,
+                width: Math.min(640, $(window).width() - 50),
+                content: '<div class="blog-detail">' + _blog[id].body + '</div>'
+            });
+        }
+        function showBlog(data) {
+            _blog = [];
+            for (var i in data.response.posts)
+            {
+                var blog = data.response.posts[i];
+                var entry = {
+                    title: blog.title,
+                    body: blog.body,
+                    date: blog.date
+                }
+                _blog.push(entry);
+                $('#blog-container ul').append('<li><a href="javascript:blog(' + i + ');"><h3>' + entry.title + '</h3><div class="date">' + moment(entry.date, "YYYY-MM-DD hh:mm:ss GMT").fromNow() + '</div></a></li>');
+            }
+        }
+        function instagramLoad(data) {
+            _instagrams = [];
+            for (var i in data.data)
+            {
+                var entry = data.data[i];
+                _instagrams.push(entry);
+                if (entry.images) {
+                    $('#instagram-container ul').append('<li data-instragram-item="' + i + '" class="instagram-item"><a href="javascript:instagram(' + i + ');void(0);"><img src="' + entry.images.thumbnail.url + '" title="' + entry.caption.text + '" />' + '<div class="comments-teaser">' + entry.caption.text + '</div><div class="comments-teaser-overlay"></div>' + (entry.videos ? '<span class="glyphicon glyphicon-facetime-video" style="display:block; position:relative; font-size:2em; top:-140px;"></span>' : '') + '</a></li>');
+                }
+            }
+
+
+        }
+
+
+        var bgImageHeight = 1280;
+        function onScroll() {
+            var height = $(window).height();
+            scrollTop = $(window).scrollTop();
+            var scrollPercent = (scrollTop / $(document).height()) * 100;
+
+            if ($(window).width() > 767) {
+                $('body').css('background-position', '0 ' + (height - bgImageHeight + (100 - scrollPercent)) + 'px');
+            } else {
+                $('body').css('background-position', '');
+            }
+        }
+        $(window).scroll(function () { onScroll(); });
+        function onResize() {
+            //console.debug('resize')
+            height = $(window).height();
+
+            var navbarHeight = $('#navbar').height();
+            var innerHeight = height - navbarHeight;
+
+
+            //$('#navbar').css('margin-top', height-(navbarHeight) + 'px')
+
+            var titleContainer = $('#title-img-container');
+            titleContainer.css('top', (titleContainer.parent().height() / 2 - titleContainer.height() / 2) + 'px');
+
+
+            var connectTextEl = $('#connect-text');
+            var connectH1 = connectTextEl.parentsUntil('.container').parent().children('.page-header').children('h1');
+            var normalHeight = innerHeight - connectH1.height() - 63;
+            var connectHeight = normalHeight  - $('.social-links').height();
+            connectTextEl.css('height', (connectHeight) + 'px');
+            $('.twitter-timeline').attr('height', connectHeight);
+
+            $('#music-content-sm').css('height', normalHeight + 'px');
+            $('#music-content-normal').css('height', normalHeight + 'px');
+
+            $('body').css('background-size', '')            
+            $('.tour-dates').css('margin-top', '10px');
+
+            $('#bandcamp-player').height($('#bandcamp-player').width());
+
+            //$('.instagram-item img').height(innerHeight / 3);
+
+            onScroll();
+
+        }
+
+        $(window).scroll(function () { onScroll(); });
+        $(window).resize(function () { onResize(); });
+
+
+        
+    </script>
+    <script type="text/javascript" src="http://api.tumblr.com/v2/blog/jaredevers.tumblr.com/posts/text?api_key=fuiKNFp9vQFvjLNvx4sUwti4Yb5yGutBN4Xh10LXZhhRKjWlV4&notes_info=true&callback=showBlog"></script>
+    <script type="text/javascript" src="https://api.instagram.com/v1/users/182138710/media/recent?client_id=b565be3fc5954f058e5bc68858b4aa1c&callback=instagramLoad"></script>
+
+    
     <script type="text/javascript">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-30884255-3']);
-      _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
 
+        $(document).ready(function () {
+
+            if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+                $('#nav-box')
+                    .attr('data-200p', 'left:200px; width:120px;')
+                    .attr('data-280p', 'left:200px; width:120px;')
+                    .attr('data-300p', 'left:315px; width:132px;')
+                    .attr('data-380p', 'left:315px; width:132px;')
+                    .attr('data-400p', 'left:451px; width:157px;');
+            }
+
+
+            onResize();
+
+
+            // SKROLLER INIT >>>
+            var s = skrollr.init({
+                easing: {
+                    easeInOutQuad: function (i) {
+                        return $.easing.easeInOutQuad(null, i, 0, 1, 1);
+                    }
+                }
+            });
+
+            //The options (second parameter) are all optional. The values shown are the default values.
+            skrollr.menu.init(s, {
+                //skrollr will smoothly animate to the new position using `animateTo`.
+                animate: true,
+
+                //The easing function to use.
+                easing: 'easeInOutQuad',
+
+                //Multiply your data-[offset] values so they match those set in skrollr.init
+                scale: 2,
+
+                //How long the animation should take in ms.
+                duration: function (currentTop, targetTop) {
+                    //By default, the duration is hardcoded at 500ms.
+                    //return 500;
+
+                    //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+                    return Math.abs(currentTop - targetTop);
+                },
+            });
+
+
+
+
+            // SLIDEE INIT >>>
+
+            {
+
+                var $frame = $('#instagram-container');
+                var $wrap = $frame.parent();
+
+
+                var $slidee = $frame.children('ul').eq(0);
+
+                // Call Sly on frame
+                $frame.sly({
+                    horizontal: 1,
+                    itemNav: 'basic',
+                    smart: 1,
+                    activateOn: 'click',
+                    mouseDragging: 1,
+                    touchDragging: 1,
+                    releaseSwing: 1,
+                    startAt: 0,
+                    scrollBar: $wrap.find('.scrollbar'),
+                    scrollBy: 1,
+                    pagesBar: $wrap.find('.pages'),
+                    activatePageOn: 'click',
+                    speed: 300,
+                    elasticBounds: 1,
+                    easing: 'easeOutExpo',
+                    dragHandle: 1,
+                    dynamicHandle: 1,
+                    clickBar: 1,
+                    // Buttons
+                    forward: $wrap.find('.forward'),
+                    backward: $wrap.find('.backward'),
+                    prev: $wrap.find('.prev'),
+                    next: $wrap.find('.next'),
+                    prevPage: $wrap.find('.prevPage'),
+                    nextPage: $wrap.find('.nextPage')
+                });
+
+            }
+
+
+
+            {
+
+                var $frame2 = $('#blog-container');
+                var $wrap2 = $frame2.parent();
+
+
+                var $slidee2 = $frame2.children('ul').eq(0);
+
+                // Call Sly on frame
+                $frame2.sly({
+                    horizontal: 1,
+                    itemNav: 'basic',
+                    smart: 1,
+                    activateOn: 'click',
+                    mouseDragging: 1,
+                    touchDragging: 1,
+                    releaseSwing: 1,
+                    startAt: 0,
+                    scrollBar: $wrap2.find('.scrollbar'),
+                    scrollBy: 1,
+                    pagesBar: $wrap2.find('.pages'),
+                    activatePageOn: 'click',
+                    speed: 300,
+                    elasticBounds: 1,
+                    easing: 'easeOutExpo',
+                    dragHandle: 1,
+                    dynamicHandle: 1,
+                    clickBar: 1,
+                    // Buttons
+                    forward: $wrap2.find('.forward'),
+                    backward: $wrap2.find('.backward'),
+                    prev: $wrap2.find('.prev'),
+                    next: $wrap2.find('.next'),
+                    prevPage: $wrap2.find('.prevPage'),
+                    nextPage: $wrap2.find('.nextPage')
+                });
+
+            }
+
+
+            $('#global-wrapper').removeClass('transparent');
+
+        });
     </script>
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="page-head">
-        <p class="lead pull-right" style="margin-top: 25px;"><a href="https://twitter.com/share" class="twitter-share-button" data-via="divshot" data-size="large">Tweet</a>
-          <script>
-            !
-            function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0],
-                p = /^http:/.test(d.location) ? 'http' : 'https';
-              if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + '://platform.twitter.com/widgets.js';
-                fjs.parentNode.insertBefore(js, fjs);
-              }
-            }(document, 'script', 'twitter-wjs');
-          </script></p>
-        <h1 class="text-left"><img src="images/themestrap_logo.png" alt="Themestrap" height="80"> <small>Bootstrap 3 Theme Gallery</small></h1>
-        <div class="alert alert-success">
-          <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <a href="https://github.com/divshot/themestrap" class="alert-link"><b>Themestrap</b></a> is a simple theme foundation for Bootstrap. This page is a gallery of the themes people have built with it!
-        </div>
-      </div>
-      <ul class="themes list-unstyled">
-        <li class="thumbnail">
-          <div class="frame">
-            <iframe src="http://code.divshot.com/bootstrap-theme-white-plum/examples/kitchen-sink.html"></iframe>
-          </div>
-          <h4 class="pull-left">            <a href="http://code.divshot.com/bootstrap-theme-white-plum">White Plum</a> <small>by Divshot</small>          </h4>
-          <div class="btn-group pull-right">
-            <a class="btn btn-default dropdown-toggle btn-small" data-toggle="dropdown" href="#">              Download              <span class="caret"></span>            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a download="" href="http://code.divshot.com/bootstrap-theme-white-plum/dist/css/bootstrap.css">bootstrap.css</a>
-              </li>
-              <li>
-                <a download="" href="http://code.divshot.com/bootstrap-theme-white-plum/dist/css/bootstrap.min.css">bootstrap.min.css</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="thumbnail">
-          <div class="frame">
-            <iframe src="http://code.divshot.com/bootstrap-theme-cirrus/examples/kitchen-sink.html"></iframe>
-          </div>
-          <h4 class="pull-left">            <a href="http://code.divshot.com/bootstrap-theme-cirrus">Cirrus</a> <small>by Divshot</small>          </h4>
-          <div class="btn-group pull-right">
-            <a class="btn btn-default dropdown-toggle btn-small" data-toggle="dropdown" href="#">              Download              <span class="caret"></span>            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a download="" href="http://code.divshot.com/bootstrap-theme-cirrus/dist/css/bootstrap.css">bootstrap.css</a>
-              </li>
-              <li>
-                <a download="" href="http://code.divshot.com/bootstrap-theme-cirrus/dist/css/bootstrap.min.css">bootstrap.min.css</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="thumbnail">
-          <div class="frame">
-            <iframe src="http://trumbitta.github.io/bootstrap-theme-supervillain/examples/kitchen-sink.html"></iframe>
-          </div>
-          <h4 class="pull-left">            <a href="http://trumbitta.github.com/bootstrap-theme-supervillain/">Supervillain</a> <small>by Trumbitta</small>          </h4>
-          <div class="btn-group pull-right">
-            <a class="btn btn-default dropdown-toggle btn-small" data-toggle="dropdown" href="#">              Download              <span class="caret"></span>            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a download="" href="http://trumbitta.github.com/bootstrap-theme-supervillain/dist/css/bootstrap.css">bootstrap.css</a>
-              </li>
-              <li>
-                <a download="" href="http://trumbitta.github.com/bootstrap-theme-supervillain/dist/css/bootstrap.min.css">bootstrap.min.css</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="thumbnail">
-          <div class="frame">
-            <iframe src="http://ngallagher87.github.io/bluerex-theme/examples/kitchen-sink.html"></iframe>
-          </div>
-          <h4 class="pull-left">            
-          	<a href="http://ngallagher87.github.com/bluerex-theme/">Bluerex</a> 
-          	<small>by Nathan Gallagher</small>          
-          </h4>
-          <div class="btn-group pull-right">
-            <a class="btn btn-default dropdown-toggle btn-small" data-toggle="dropdown" href="#">
-            	Download <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a download="" href="http://ngallagher87.github.com/bluerex-theme/dist/css/bootstrap.css">bootstrap.css</a>
-              </li>
-              <li>
-                <a download="" href="http://ngallagher87.github.com/bluerex-theme/dist/css/bootstrap.min.css">bootstrap.min.css</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="thumbnail">
-          <a href="https://github.com/divshot/themestrap" class="your-theme-here">!</a><h4 class="pull-left">            Your Theme Here          </h4>
-          <a class="btn pull-right btn-primary btn-small" href="https://github.com/divshot/themestrap">              Learn More &raquo;            </a>
-        </li>
-      </ul>
-      <p class="text-muted text-center" style="margin-top: 40px; margin-bottom: 30px;">Brought to you by your Bootstrap-loving friends at <a href="http://www.divshot.com/">Divshot</a>. <a href="https://github.com/divshot/themestrap">GitHub Source</a></p>
-    </div>
-  </body>
 
-</html>
+</body>
