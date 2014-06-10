@@ -12,3 +12,426 @@
 @import "bootstrap.less";
 
 // Add CSS Customizations to your theme here.
+
+* {
+    margin:0;
+    padding:0;
+}
+html {
+    height:100%;
+}
+
+body {
+    height:100%;
+    background: url(../images/bg2.jpg) no-repeat fixed;
+}
+p {
+    text-align:justify;
+}
+
+.transparent {
+	/* Required for IE 5, 6, 7 */
+	/* ...or something to trigger hasLayout, like zoom: 1; */
+	width: 100%; 
+		
+	/* Theoretically for IE 8 & 9 (more valid) */	
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=0);
+	
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.0;
+	
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.0;
+    
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 0.0;
+}
+
+
+
+.screen-panel {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.fancybox-inner {
+    /*-webkit-overflow-scrolling:touch;*/
+}
+
+.fancybox-inner img {
+    max-width:100%;
+}
+
+.blog-detail {
+    padding:0 75px; 
+    a {
+        color: @brand-primary;
+    }
+    -webkit-overflow-scrolling:touch;
+}
+
+.well
+{
+    margin: 10px 0; 
+    border: 3px solid white; 
+    background-color: rgba(80, 80, 80, 0.8)
+}
+
+.page-header {
+    margin: 0;
+    border:none;
+}
+.page-header h1 {
+    font-size: 4em;
+    .text-center();
+}
+
+.social-links a img {
+    padding:6px;
+}
+.social-links a:hover img {
+    padding:3px;
+    border:3px solid white;
+}
+
+#je {
+    background: url(../images/pngs/txt-title.png) center no-repeat;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+.songkick-widget
+{
+    border:3px solid white;
+}
+
+.inner-scroll {
+    overflow-x:hidden;
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#navbar {
+    border-radius: 0px;
+    font-size: 1.3em;
+
+    .active .navbar-brand,
+    li.active a {
+    }
+
+    li a,
+    .navbar-brand {
+        padding: 6px;
+        margin-right: 10px;
+        line-height: 33px;
+    }
+
+        img,
+        .navbar-brand img {
+            width: auto;
+            height: 1em;
+        }
+
+    .container {
+        position:relative;
+    }
+
+    #nav-box {
+        position: absolute;
+        top: 2px;
+        height: 100%;
+        border: 3px solid white;
+    }
+}
+.img-title {
+    height:1.7em;
+    width:auto;
+}
+
+
+
+/*
+#blog-container.frame
+{
+    ul
+    {
+        height:145px;
+        list-style:none inside none;
+        overflow-x:scroll;
+        overflow-y:hidden;
+        margin: 10px 0 0 0;
+        li {
+            float:left;
+            margin: 0 10px 0 0;
+            height: 125px;
+            width: 28% ;
+            min-width:150px;
+            a {
+                text-align:center;
+                display:block;
+                height: 125px;
+                width:100%;
+                padding:3px;
+                border:3px solid white;
+                h3
+                {
+                    font-size:20px;
+                    font-weight:bold;
+                }
+                .date
+                {
+                    font-size:14px;
+                    color:#ddd;
+                }
+            }
+            a:hover 
+            { 
+                text-decoration:none; 
+                background-color:rgba(220, 220, 220, 0.2);
+            }
+        
+        }
+    }    
+}*/
+
+#blog-container {
+    height:145px;
+    line-height:145px;
+    margin: 10px 0 0 0; 
+    li {
+            float:left;
+            margin: 0 10px 0 0;
+            height: 125px;
+            //width: 28% ;
+            width:250px;
+            a {
+                text-align:center;
+                display:block;
+                height: 125px;
+                width: 100%;
+                padding:3px;
+                border:3px solid white;
+                h3
+                {
+                    font-size:20px;
+                    font-weight:bold;
+                }
+                .date
+                {
+                    line-height:1em;
+                    font-size:14px;
+                    color:#ddd;
+                }
+            }
+            a:hover 
+            { 
+                text-decoration:none; 
+                background-color:rgba(220, 220, 220, 0.2);
+            }
+        
+        }
+}
+
+
+.frame {
+	height: 250px;
+	line-height: 250px;
+	overflow: hidden;
+    ul {
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	    height: 100%;
+	    li {
+	        float: left;
+	        width: auto;
+	        height: 100%;
+	        padding: 0 5px 0 0;
+	        //background: #333;
+
+	        color: #ddd;
+	        text-align: center;
+	        cursor: pointer;
+
+            img {
+                border: 3px solid white;
+                height:100%;
+                width:auto;
+            }
+        }
+        /*li.active {
+	        color: #fff;
+	        background: #a03232;
+        }*/
+    }
+}
+
+#instagram-container
+{
+
+}
+
+.instagram-item {
+    
+    .comments-teaser {
+        position:relative;
+        top:5px;
+        left:3px;
+        width:244px;
+        height:60px;
+        overflow:hidden;
+        line-height:1em;
+        text-align:left;
+        font-weight:lighter;
+        font-size:16px;
+        padding:3px;
+        background-color:rgba(0,0,0,0.6);
+        -webkit-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+           -moz-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+             -o-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+                transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+    }
+    .comments-teaser-overlay {
+        position:relative;
+        top:-30px;
+        height:30px;
+        width:244px;
+        left:3px;
+         /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC44Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-8 */
+
+        -webkit-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+           -moz-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+             -o-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+                transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+    }
+ 
+    a {
+        color:#f3f3f3;
+    } 
+    a:hover {
+        text-decoration:none;
+        color:white;
+        .comments-teaser {
+            top:-60px;
+        }
+        .comments-teaser-overlay {
+            top:-90px;
+
+        }
+    }
+    
+
+
+}
+
+
+
+
+@media (max-width: @screen-xs-max) {
+    body {
+        background: url(../images/bg2.jpg) no-repeat left center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;            
+    }
+    .blog-detail {
+        padding:0 10px; 
+    }
+
+    #je {
+        background: url(../images/pngs/txt-title-small.png) center no-repeat;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+    .img-title {
+        height:0.8em;
+    }
+    #blog-container h3 {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+/*.scrollbar {
+	margin: 0 0 1em 0;
+	height: 2px;
+	background: #292a33;
+	line-height: 0;
+}
+.scrollbar .handle {
+	width: 100px;
+	height: 100%;
+	background: #ccc;
+	cursor: pointer;
+}
+.scrollbar .handle .mousearea {
+	position: absolute;
+	top: -9px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+}
+
+.effects {
+	height: 200px;
+	line-height: 200px;
+	-webkit-perspective: 800px;
+	-ms-perspective: 800px;
+	perspective: 800px;
+	-webkit-perspective-origin: 50% 50%;
+	-ms-perspective-origin: 50% 50%;
+	perspective-origin: 50% 50%;
+	overflow-y: show;
+}
+.effects ul {
+	-webkit-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.effects ul li {
+	position: relative;
+	margin: 0 -20px;
+	-webkit-transform: rotateY(60deg) scale(0.9);
+	-ms-transform: rotateY(60deg) scale(0.9);
+	transform: rotateY(60deg) scale(0.9);
+	-webkit-transition: -webkit-transform 300ms ease-out;
+	transition: transform 300ms ease-out;
+}
+.effects ul li.active {
+	z-index: 10;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.effects ul li.active ~ li {
+	-webkit-transform: rotateY(-60deg) scale(0.9);
+	-ms-transform: rotateY(-60deg) scale(0.9);
+	transform: rotateY(-60deg) scale(0.9);
+}*/
